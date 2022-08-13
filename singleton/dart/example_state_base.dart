@@ -1,15 +1,16 @@
 abstract class ExampleStateBase {
-    @protected
-    String initialText;
-    @protected
-    String stateText;
-    String get currentText => steateText;
+  @protected
+  String initialText;
 
-    void setStateText(String text) {
-        stateText = text;
-    }
+  @protected
+  String stateText;
+  String get currentText => stateText;
 
-    void reset() {
-        stateText = initialText;
-    }
+  void setStateText(String text) {
+    stateText = text;
+  }
+
+  void reset() {
+    stateText = initialText;
+  }
 }
